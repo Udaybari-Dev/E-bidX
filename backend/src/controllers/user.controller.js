@@ -9,8 +9,11 @@ import PaymentMethod from "../models/userPaymentMethod.model.js";
 import Stripe from 'stripe';
 import mongoose from "mongoose";
 // const stripe= new Stripe(process.env.STRIPE_KEY);
-const stripe = new Stripe("sk_test_51P5t81Lvvxf0OOpIgdu78eLqln3YJO5Q7NfKMfNEl93qXkiLjy6FBzvY37O8p1QlhWOWwQUg6m9zU5WtDaYfKMLS00rhq7lcCT")
+// const stripe = new Stripe("sk_test_51P5t81Lvvxf0OOpIgdu78eLqln3YJO5Q7NfKMfNEl93qXkiLjy6FBzvY37O8p1QlhWOWwQUg6m9zU5WtDaYfKMLS00rhq7lcCT")
 
+import dotenv from "dotenv";
+dotenv.config();
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // @desc Register user
 // @route POST /api/v1/users/register
