@@ -15,7 +15,7 @@ const io = new Server(server, {
 });
 
 dotenv.config({
-  path:"./env"
+  path:"./.env"
 })
 
 connectDB()

@@ -39,6 +39,10 @@ app.use("/api/v1/notifications",notificationRouter);
 app.use("/api/v1/payments",paymentRouter);
 app.use("/api/v1/cart", cartRouter)
 
-
+// Health check route
+app.get("/", (req, res) => {
+    res.status(200).send("E-bidX backend is running 🚀");
+  });
+  
 
 export {app}
