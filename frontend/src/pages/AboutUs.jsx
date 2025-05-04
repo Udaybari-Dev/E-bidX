@@ -62,7 +62,7 @@ const AboutUs = () => {
                 About Us
               </span>
               <h2 className="mt-2 text-4xl font-medium">
-              The Ultimate Auction Hub — Bid, Buy, and Sell Anything, Anytime
+              The Ultimate Auction Hub — Bid, Buy, and Sell Anything, Anytime with E-bidX
               </h2>
             </div>
             <div className="text-body-text-color">
