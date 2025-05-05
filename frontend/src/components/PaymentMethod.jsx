@@ -11,7 +11,9 @@ import { useSelector,useDispatch } from "react-redux";
 import { getCurrentUser } from "../store/auth/authSlice";
 import { toast } from "react-toastify";
 
-const stripe = loadStripe("pk_test_51P5t81Lvvxf0OOpItZ5a94EMI92eFidBTy8oWVF7XTsHTwu17Q9BB292AQjV6s3fjSoWdp60vlG1jG090s6QgDm100UKAL5SIR");
+const stripe = await loadStripe(
+  "pk_test_51P5t81Lvvxf0OOpItZ5a94EMI92eFidBTy8oWVF7XTsHTwu17Q9BB292AQjV6s3fjSoWdp60vlG1jG090s6QgDm100UKAL5SIR"
+);
 
 const CheckoutForm = () => {
   const { user } = useSelector((state) => state.auth);
@@ -64,7 +66,7 @@ const CheckoutForm = () => {
       if (user?.paymentVerified){
         axios
           .post(
-            "https://e-bidx.onrender.com/api/v1/payments/update-payment-method",
+            "http://localhost:8000/api/v1/payments/update-payment-method",
             { paymentMethodId: paymentMethod.id },
             { withCredentials: true }
           )
