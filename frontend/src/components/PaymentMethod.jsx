@@ -11,7 +11,7 @@ import { useSelector,useDispatch } from "react-redux";
 import { getCurrentUser } from "../store/auth/authSlice";
 import { toast } from "react-toastify";
 
-const stripe = await loadStripe(
+const stripe = loadStripe(
   "pk_test_51P5t81Lvvxf0OOpItZ5a94EMI92eFidBTy8oWVF7XTsHTwu17Q9BB292AQjV6s3fjSoWdp60vlG1jG090s6QgDm100UKAL5SIR"
 );
 
