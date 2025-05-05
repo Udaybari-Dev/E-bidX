@@ -2,7 +2,7 @@
 
 E-bidX is a full-stack web application 💻 that enables users to participate in real-time auctions ⏱️ for various items 📦. Built with the MERN stack ⚙️ and powered by WebSockets 🔌, E-bidX ensures smooth, live bidding experiences. The platform allows users to list products 📝, join auctions 👥, and place bids 💸 in real-time 🚀.
 
-## 🔥 Live Demo
+## 🔥 Live View
 
 👉 [Click here to view the live demo](https://e-bid-x.vercel.app)
 
