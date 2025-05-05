@@ -67,7 +67,7 @@ npm run dev
 
 ## 🔥 Live Demo
 
-👉 [Click here to view the live demo](https://your-live-demo-link.com)
+👉 [Click here to view the live demo](https://e-bid-x.vercel.app)
 
 ---
 
