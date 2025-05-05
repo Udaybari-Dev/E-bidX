@@ -12,7 +12,8 @@ const allowedOrigins = ["https://e-bid-x.vercel.app","https://e-bidx.onrender.co
 app.use(cors({
     origin: allowedOrigins,
     credentials:true,
-    methods: ["GET","POST","DELETE","UPDATE"]
+    methods: ["GET","POST","DELETE","UPDATE"],
+    allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
 app.use(express.json({limit:"16kb"}));
