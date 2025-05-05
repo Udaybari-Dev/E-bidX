@@ -5,9 +5,7 @@ const API_URL = 'https://e-bidx.onrender.com/api/v1';
 
 const register = async (user) => {
     
-        const response = await axios.post(`${API_URL}/users/register`, user,{
-            withCredentials: true
-        });
+        const response = await axios.post(`${API_URL}/users/register`, user);
         //console.log('response register', response.data);
         return response.data;
 };

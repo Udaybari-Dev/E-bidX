@@ -9,8 +9,8 @@ const app=express();
 // const allowedOrigins = ["https://e-bid-x.vercel.app"];
 
 app.use(cors({
-    origin: "https://e-bid-x.vercel.app",
-    credentials: true,
+    origin: "*",
+    // credentials: true,
     methods: ["GET", "POST", "DELETE", "PUT", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"]
   }));
