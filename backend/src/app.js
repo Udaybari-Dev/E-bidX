@@ -6,7 +6,7 @@ import "./cronJobs.js"
 const app=express();
 
 // ✅ Set allowed origins (only your frontend domain)
-const allowedOrigins = ["https://e-bid-x.vercel.app"];
+// const allowedOrigins = ["https://e-bid-x.vercel.app"];
 
 
 app.use(cors({
