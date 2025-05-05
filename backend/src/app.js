@@ -5,14 +5,19 @@ import cookieParser from "cookie-parser";
 import "./cronJobs.js"
 const app=express();
 
-// ✅ Set allowed origins (only your frontend domain)
-const allowedOrigins = ["https://e-bid-x.vercel.app","https://e-bidx.onrender.com"];
-
+// ✅ Only allow these origins
+const allowedOrigins = ["https://e-bid-x.vercel.app"];
 
 app.use(cors({
-    origin: allowedOrigins,
-    credentials:true,
-    methods: ["GET","POST","DELETE","UPDATE"],
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("Not allowed by CORS"));
+        }
+    },
+    credentials: true,
+    methods: ["GET", "POST", "DELETE", "PUT", "PATCH"], // include PUT/PATCH if needed
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
 
