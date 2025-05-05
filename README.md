@@ -63,7 +63,7 @@ npm run dev
     CLOUDINARY_API_KEY=your_api_key
     CLOUDINARY_API_SECRET=your_api_secret
     ```
-# 🔒 Note:Keep this .env file private. Add it to .gitignore.
+#🔒 Note:Keep this .env file private. Add it to .gitignore.
 
 ## 🔥 Live Demo
 
