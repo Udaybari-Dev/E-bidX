@@ -13,6 +13,7 @@ import mongoose from "mongoose";
 
 import dotenv from "dotenv";
 dotenv.config();
+console.log("Stripe Key:", process.env.STRIPE_SECRET_KEY);
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 // @desc Register user
