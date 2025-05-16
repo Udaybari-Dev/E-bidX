@@ -74,7 +74,7 @@ npm run dev
 ## 🙋‍♂️ About the Author
 
 **Uday Bari**  
-🔗 GitHub: [@Udaybari324](https://github.com/Udaybari324)  
+🔗 GitHub: [@Udaybari-Dev](https://github.com/Udaybari-Dev)
 💼 LinkedIn: [Linkedin](https://your-portfolio-link.com)  
 📫 Email: [udaybari17@gmail.com](udaybari17@gmail.com)  
 🛠️ Passionate about building real-time, scalable web applications using modern JavaScript stacks.
