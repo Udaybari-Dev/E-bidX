@@ -14,7 +14,7 @@ const AboutUs = () => {
       name: "Uday Bari",
       skill: "MERN Stack Developer",
       link1: "https://www.linkedin.com/in/uday-bari-324hu",
-      link2: "https://github.com/Udaybari324",
+      link2: "https://github.com/Udaybari-Dev",
     },
     {
       id: 2,
